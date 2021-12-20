@@ -8,7 +8,10 @@ public class Console {
         for(String arg: args) {
             System.err.println(arg);
         }
-        
+
         System.out.println(Thread.currentThread().getStackTrace()[2]);
+    }
+    public void clear() {
+        System.out.print("\033\143");
     }
 }
