@@ -1,11 +1,11 @@
 public class Console {
-    public void log(String... args) {
-        for(String arg: args) {
+    public void log(Object... args) {
+        for(Object arg: args) {
             System.out.println(arg);
         }
     }
-    public void error(String... args) {
-        for(String arg: args) {
+    public void error(Object... args) {
+        for(Object arg: args) {
             System.err.println(arg);
         }
 
